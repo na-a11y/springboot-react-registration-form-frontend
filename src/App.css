@@ -1,0 +1,108 @@
+.App {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #e0f7fa;
+  font-family: 'Roboto', sans-serif;
+}
+
+.App-header {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px; /* Reduced width for smaller fields */
+  margin: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: #00796b;
+  text-align: center;
+  font-weight: 500;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Slightly reduced gap between fields */
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 5px;
+  display: block;
+  font-weight: 500;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 15px; /* Reduced margin for compact design */
+}
+
+input {
+  width: 95%;
+  padding: 10px 12px; /* Reduced padding for smaller fields */
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px; /* Slightly smaller font size */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  outline: none;
+  background-color: #f9f9f9;
+  box-shadow: inset 0px 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+input:focus {
+  border-color: #00796b;
+  box-shadow: 0px 0px 8px rgba(0, 121, 107, 0.3);
+}
+
+button {
+  padding: 12px; /* Reduced padding for a more compact button */
+  background-color: #00796b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 16px; /* Slightly smaller font size */
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #004d40;
+}
+
+p {
+  font-size: 14px;
+  color: red;
+  margin-top: -10px;
+}
+
+.success-message {
+  font-size: 14px;
+  color: green;
+  margin-top: 10px;
+}
+
+@media (max-width: 400px) {
+  .App-header {
+    padding: 20px;
+  }
+
+  input {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+}
